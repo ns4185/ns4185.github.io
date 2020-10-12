@@ -1,0 +1,75 @@
+@font-face{
+    font-family: Bebas;
+    src: url(../assets/BebasNeue-Regular.ttf)
+}
+
+*{
+    font-family: Bebas;
+}
+
+body{
+    background-image: url(../Interactive_Artwork_Week6/among_us_background.png);
+    background-color: rgb(152, 150, 147);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+h1{
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+
+body{
+    color: rgba(253, 250, 250, 0.5);
+}
+
+
+
+/* .parent{
+    display:flex;
+} */
+.hovering{
+    display:none;
+}
+.parent:hover .hovering{
+    display: flex;
+    justify-content:center;
+}
+.hovering2{
+    display:none;
+}
+.parent2:hover .hovering2{
+    display: flex;
+    justify-content:center;
+}
+
+
+
+.green{
+    width: 15%;
+    height:auto;
+    
+}
+
+.orange {
+    width: 10%;
+    height:auto;
+}
+
+
+
+
+/* #flexBox1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#flexBox1 img {
+    width: 150px;
+} */
+
+
