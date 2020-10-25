@@ -3,8 +3,251 @@
     src: url(../style/Cocogoose_Pro_Ultralight-trial.ttf);
 }
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.navigation, .homepageblock, .backtotop, .aboutuspage, .events, h1,footer{
     font-family: Coco;
+}
+
+.dancecovers h1{
+    font-size: 3vw;
+}
+.dancecovers {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+.dancecovers p{
+    font-style:italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+
+}
+.dancecovers a{
+    font-style: italic;
+    text-decoration: none;
+    color:purple;
+    font-family: Coco;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.dancecovers a:hover{
+    opacity: 0.5;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.02);
+}
+/* .covers2020 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+} */
+
+.covers2020 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.covers2020 iframe {
+    width: 50vw;
+    height: 28vw;
+}
+
+.covers2019 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+}
+
+.video {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.covers2019 iframe{
+    width: 41.25vw;
+    height:23.1vw;
+}
+
+.events {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.events h1{
+    font-size: 3vw;
+}
+
+.evententry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+
+
+.eventtext {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.evententry img:hover {
+    opacity: 0.8;
+    transform: scale(1.01);
+    transition: transform 500ms ease-in-out;
+    transform-origin:center;
+} 
+
+
+
+.eventtext p:hover {
+    color: darkorchid;
+    transition: transform 500ms ease-in-out;
+    transform: scale (1.01);
+    transform-origin:center;
+}
+
+
+.eventtext p{
+    text-align: center;
+    font-size: 1.5vw;
+    line-height:150%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.blurb p{
+    font-size: 1vw;
+    font-style:italic;
+    text-align: center;
+}
+
+.evententry img{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 50vw;
+    height: auto;
+}
+
+.aboutuspage {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutuspage h1{
+    font-size: 3vw;
+    margin-bottom: -5px;
+}
+.aboutusentryleft {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row:auto;
+    font-size: 1.5vw;
+    padding-bottom: 20px;
+}
+
+.aboutusentryleft p, .aboutusentryright p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    line-height: 150%;
+    font-family: 'Montserrat',sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.aboutusentryleft img, .aboutusentryright img{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.aboutusentryleft p:hover{
+    color:plum;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.01);
+    transform-origin:center;
+}
+
+.aboutusentryright p:hover{
+    color:plum;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.01);
+    transform-origin:center;
+}
+
+.aboutusentryleft img:hover {
+    opacity:0.8;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.02);
+    transform-origin:center;
+}
+.aboutusentryright img:hover {
+    opacity:0.8;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.02);
+    transform-origin:center;
+}
+
+#diamond{
+    max-width: 40vw;
+    height: auto;
+}
+#class {
+    max-width: 40vw;
+    height:auto;
+}
+
+#blackswan {
+    max-width: 50vw;
+    height:auto;
+}
+
+
+.aboutusentryleft img{
+    padding-left: 40px;
+}
+
+.aboutusentryright img{
+    padding-right: 40px;
+}
+
+.aboutusentryright {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row:auto;
+    font-size: 1.5vw;
+    padding-bottom: 20px;
+}
+
+
+
+.backtotop {
+    text-align:center;
+    font-size: 1.3vw;
+}
+.backtotop a{
+    color: black;
+    text-decoration: none;
+}
+
+.backtotop:hover a{
+    color:purple;
+    transition: 0.5s;
+    font-size: 110%;
+    transform-origin:center;
 }
 
 html,body {
@@ -48,6 +291,44 @@ p {
 /* body{
     text-align:center;
 } */
+.announcements {
+    list-style:none;
+    margin: 0 2px;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.announcements h1{
+    font-size: 3vw;
+    color: black;
+    font-family: Coco;
+}
+
+.date, .actualannouncement{
+    font-size: 1.5vw;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.announcemententry {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+    grid-row:auto;
+    padding-right: 80px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: slateblue;
+    font-style: italic;
+}
+.actualannouncement p{
+    text-align: justify;
+    color: black;
+}
 
 
 .navigation {
@@ -58,6 +339,9 @@ p {
     border: 2px solid #000000;
     text-align: center;
 }
+
+
+
     
 .navigation ul{
     list-style: none;
@@ -88,6 +372,7 @@ p {
 .navigation a:hover{
     background-color: #7f4b9f;
     transition: 0.5s;
+    
 }
 
 .homepageblock {
@@ -99,7 +384,39 @@ p {
     grid-template-columns:1fr;
     grid-row: auto;
     
+}
+ 
+@media only screen and (max-width:650px) {
+    .navigation a{
+        font-size: 1.8vw;
+    }
+    .homepageblock {
+        height:55vh;
+    }
+    .date, .actualannouncement {
+        font-size:2vw;
+    }
+    .backtotop {
+        font-size: 1.8vw
+    }
+    .aboutusentryleft, .aboutusentryright{
+        font-size:2vw;
+    }
 
+    .evententry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .eventtext p, .blurb p{
+        font-size: 2vw;
+        
+       
+    }
+   
+   
 }
 
 
@@ -115,7 +432,6 @@ p {
     transform-origin:left top;
     
 }
-
 
 
 .rowleft a{
@@ -214,7 +530,7 @@ p {
 footer{
     background-color: #000000;
     border: 2px solid #000000;
-  
+    text-decoration: none;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
