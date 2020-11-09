@@ -54,7 +54,7 @@ function Function2(){
         audio.play();
     }
 
-    audio.loop = true;
+    // audio.loop = true;
 
  }
 
@@ -69,7 +69,7 @@ function Function3(){
         audio.play();
     }
 
-    audio.loop = true;
+    // audio.loop = true;
 
 }
 
@@ -84,6 +84,6 @@ function Function4(){
         audio.play();
     }
 
-    audio.loop = true;
+    // audio.loop = true;
 
    }
