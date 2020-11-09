@@ -36,6 +36,10 @@ img {
     transition: 0.3s;
    }
 
-h2 {
+h2, h4 {
     text-align: center;
+}
+
+h4 {
+    font-style: italic;
 }
