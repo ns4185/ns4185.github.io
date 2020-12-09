@@ -207,6 +207,14 @@ button {
     margin-left: 20px;
 }
 
+.redplay, .orangeplay, .yellowplay, .greenplay, .blueplay, .purpleplay, .maintitle{
+    transition: 0.35s ease-in-out;
+}
+.redplay:hover, .orangeplay:hover, .yellowplay:hover, .greenplay:hover, .blueplay:hover, .purpleplay:hover, .maintitle:hover{
+    opacity:0.5;
+
+}
+
 
 
 @media only screen and (max-width:900px) {

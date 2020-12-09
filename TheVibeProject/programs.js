@@ -16,59 +16,102 @@ $(document).ready(function(){
     $(".blueplaying").hide();
     $(".purpleplaying").hide();
 
+
+    $(".redskip").hide();
+    $(".orangeskip").hide();
+    $(".yellowskip").hide();
+    $(".greenskip").hide();
+    $(".blueskip").hide();
+    $(".purpleskip").hide();
+
     // BOSS BITCH
     var bossbitchaudio = new Audio("bossbitch.mp3");
+    bossbitchaudio.volume = 0.2;
 
     // BOOSTER
     var boosteraudio = new Audio("Booster.mp3");
+    boosteraudio.volume = 0.2;
+
 
     // LEMON   
     var lemonaudio = new Audio("lemon.mp3");
+    lemonaudio.volume = 0.2;
+
 
     // FEEL IT STILL
     var feelitstillaudio = new Audio("feelitstill.mp3");
+    feelitstillaudio.volume = 0.2;
+
 
     // ANIMAL
     var animalaudio = new Audio("Animal.mp3");
+    animalaudio.volume = 0.2;
+
 
     // NINE LIVES
     var ninelivesaudio = new Audio("ninelives.mp3");
+    ninelivesaudio.volume = 0.2;
+
 
     // BRIGHT
     var brightaudio = new Audio("bright.mp3") ;
+    brightaudio.volume = 0.2;
+
 
     // SHAKE IT OFF
     var shakeitoffaudio = new Audio("shakeitoff.mp3");
+    shakeitoffaudio.volume = 0.2;
+
 
     // ELECTRIC LOVE
     var electricloveaudio = new Audio("electriclove.mp3");
+    electricloveaudio.volume = 0.2;
+
 
     // OPEN YOUR MIND
     var openyourmindaudio = new Audio("openyourmind.mp3");
+    openyourmindaudio.volume = 0.2;
+
 
     // LOST IN JAPAN
     var lostinjapanaudio = new Audio("lostinjapan.mp3");
+    lostinjapanaudio.volume = 0.2;
+
 
     // SAY SO
     var saysoaudio = new Audio("sayso.mp3")
+    saysoaudio.volume = 0.2;
+
 
     // BITCHES BROKEN HEARTS
     var bitchesbrokenheartsaudio = new Audio("bitchesbrokenhearts.mp3");
+    bitchesbrokenheartsaudio.volume = 0.2;
+
 
     // BEST PART
     var bestpartaudio = new Audio("bestpart.mp3");
+    bestpartaudio.volume = 0.2;
+
 
     // MAYDAY
     var maydayaudio = new Audio("mayday.mp3")
+    maydayaudio.volume = 0.2;
+
 
     // IT'S RAINING SOMEWHERE ELSE
     var undertaleaudio = new Audio("undertale.mp3");
+    undertaleaudio.volume = 0.2;
+
 
     // ROYALS
     var royalsaudio = new Audio("royals.mp3");
+    royalsaudio.volume = 0.2;
+
 
     // UNRAVEL
     var unravelaudio = new Audio("unravel.mp3");
+    unravelaudio.volume = 0.2;
+
 
     function allmute(){
         boosteraudio.pause();
@@ -89,6 +132,7 @@ $(document).ready(function(){
         undertaleaudio.pause();
         royalsaudio.pause();
         unravelaudio.pause();
+
     }
 
     function hidecolorplaying(){
@@ -140,10 +184,31 @@ $(document).ready(function(){
         $(".purple").fadeTo(300, 1);
     })
     
+    $(".maintitle").click(function(){
+        $(".content").animate({"backgroundColor":"white"}, 'slow');
+        $(".hometext").show(1000);
+        $(".redtext").hide(1000);
+        $(".orangetext").hide(1000);
+        $(".yellowtext").hide(1000);
+        $(".greentext").hide(1000);
+        $(".bluetext").hide(1000);
+        $(".purpletext").hide(1000);
+
+        $(".nowplaying").hide();
+        $(".noneplaying").hide();
+
+        $(".red").animate({"backgroundColor":"#69161C"}, 'slow');
+        $(".orange").animate({"backgroundColor":"#81331D"}, 'slow');
+        $(".yellow").animate({"backgroundColor":"#845320"}, 'slow');
+        $(".green").animate({"backgroundColor":"#043A1D"}, 'slow');
+        $(".blue").animate({"backgroundColor":"#181D51"}, 'slow');
+        $(".purple").animate({"backgroundColor":"#3A1C50"}, 'slow');
+    })
 
     function redpage(){
         $(".red").animate({"backgroundColor":"#C1272D"}, 'slow');
         $(".content").animate({"backgroundColor":"#C1272D"}, 'slow');
+
 
         $(".orange").animate({"backgroundColor":"#81331D"}, 'slow');
         $(".yellow").animate({"backgroundColor":"#845320"}, 'slow');
@@ -277,36 +342,88 @@ $(document).ready(function(){
         redpage();
         allmute();
         hidecolorplaying();
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".redplay").show();
     })
 
     $(".orange").click(function(){
         orangepage();
         allmute();
         hidecolorplaying();
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".orangeplay").show();
     })
 
     $(".yellow").click(function(){
         yellowpage();
         allmute();
         hidecolorplaying();
+
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".yellowplay").show();
+       
     })
 
     $(".green").click(function(){
        greenpage();
        allmute();
        hidecolorplaying();
+       $(".redskip").hide();
+       $(".orangeskip").hide();
+       $(".yellowskip").hide();
+       $(".greenskip").hide();
+       $(".blueskip").hide();
+       $(".purpleskip").hide();
+
+       $(".greenplay").show();
+ 
     })
 
     $(".blue").click(function(){
         bluepage();
         allmute();
         hidecolorplaying();
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".blueplay").show();
+    
     })
 
     $(".purple").click(function(){
         purplepage();
         allmute();
         hidecolorplaying();
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".purpleplay").show();
     })
 
     
@@ -320,6 +437,23 @@ $(document).ready(function(){
         $(".blueplaying").hide();
         $(".purpleplaying").hide();
         $(".noneplaying").show();
+
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".redplay").show();
+        $(".orangeplay").show();
+        $(".yellowplay").show();
+        $(".greenplay").show();
+        $(".blueplay").show();
+        $(".purpleplay").show();
+
+
+
     })
     $(".stop").mouseenter(function(){
         $(".stop").fadeTo(200, 0.5);
@@ -335,9 +469,74 @@ $(document).ready(function(){
     var bossbitchplaying=false;
     var boosterplaying=false;
     var lemonplaying=false;
-   
-    $(".redplay").click(function(){
 
+   
+
+    $(".redplay").click(function(){
+        $(".redplay").hide();
+        $(".redskip").show();
+        $(".redplaying").show();
+        $(".noneplaying").hide();
+        var redsong = Math.random();
+
+        console.log("bossbitchbefore",bossbitchplaying);
+        console.log("boosterbefore",boosterplaying);
+        console.log("lemonbefore",lemonplaying);
+            if (redsong > 0.666){
+                // BOSS BITCH
+                bossbitchaudio.currentTime = 0;
+                boosteraudio.pause();
+                lemonaudio.pause();
+                bossbitchaudio.play();
+                
+                $(".booster").hide();
+                $(".lemon").hide();
+                $(".bossbitch").show();
+                bossbitchplaying = true;
+                boosterplaying = false;
+                lemonplaying = false;
+                console.log(7);
+                
+                
+            } else if (redsong >0.333){
+                // BOOSTER
+                boosteraudio.currentTime = 0;
+                bossbitchaudio.pause();
+                lemonaudio.pause();
+                boosteraudio.play();
+                
+                $(".lemon").hide();
+                $(".bossbitch").hide();
+                $(".booster").show();
+                bossbitchplaying = false;
+                boosterplaying = true;
+                lemonplaying = false;
+                console.log(8);
+                
+            } else {
+                // LEMON
+                lemonaudio.currentTime = 0;
+                bossbitchaudio.pause();
+                boosteraudio.pause();
+                lemonaudio.play();
+                
+                $(".bossbitch").hide();
+                $(".booster").hide();
+                $(".lemon").show();
+                bossbitchplaying = false;
+                boosterplaying = false;
+                lemonplaying = true;
+                console.log(9);
+                
+            }
+        console.log("bossbitchafter",bossbitchplaying);
+        console.log("boosterafter",boosterplaying);
+        console.log("lemonafter",lemonplaying);
+    })
+
+
+
+    $(".redskip").click(function(){
         $(".redplaying").show();
         $(".noneplaying").hide();
         var redsong = Math.random();
@@ -486,12 +685,13 @@ $(document).ready(function(){
         console.log("lemonafter",lemonplaying);
     })
 
-    $(".redplay").mouseenter(function(){
-        $(".redplay").fadeTo(200, 0.5);
+    $(".redskip").mouseenter(function(){
+        $(".redskip").fadeTo(200, 0.5);
     })
-    $(".redplay").mouseleave(function(){
-        $(".redplay").fadeTo(200, 1);
+    $(".redskip").mouseleave(function(){
+        $(".redskip").fadeTo(200, 1);
     })
+
 
 
 
@@ -500,6 +700,73 @@ $(document).ready(function(){
     var animalplaying=false;
     var ninelivesplaying=false;
     $(".orangeplay").click(function(){
+        $(".orangeplay").hide();
+        $(".orangeskip").show();
+        $(".orangeplaying").show();
+        $(".noneplaying").hide();
+        var orangesong = Math.random();
+
+        console.log("feelitstillbefore",feelitstillplaying);
+        console.log("animalbefore",animalplaying);
+        console.log("ninelivesbefore",ninelivesplaying);
+            if (orangesong > 0.666){
+                // FEEL IT STILL
+                feelitstillaudio.currentTime = 0;
+                animalaudio.pause();
+                ninelivesaudio.pause();
+                feelitstillaudio.play();
+                
+                $(".animal").hide();
+                $(".ninelives").hide();
+                $(".feelitstill").show();
+                feelitstillplaying = true;
+                animalplaying = false;
+                ninelivesplaying = false;
+                console.log(7);
+                
+                
+            } else if (orangesong >0.333){
+                // ANIMAL
+                animalaudio.currentTime = 0;
+                feelitstillaudio.pause();
+                ninelivesaudio.pause();
+                animalaudio.play();
+                
+                $(".ninelives").hide();
+                $(".feelitstill").hide();
+                $(".animal").show();
+                feelitstillplaying = false;
+                animalplaying = true;
+                ninelivesplaying = false;
+                console.log(8);
+                
+            } else {
+                // NINE LIVES
+                ninelivesaudio.currentTime = 0;
+                feelitstillaudio.pause();
+                animalaudio.pause();
+                ninelivesaudio.play();
+                
+                $(".feelitstill").hide();
+                $(".animal").hide();
+                $(".ninelives").show();
+                feelitstillplaying = false;
+                animalplaying = false;
+                ninelivesplaying = true;
+                console.log(9);
+                
+            }
+    
+        console.log("feelitstillafter",feelitstillplaying);
+        console.log("animalafter",animalplaying);
+        console.log("ninelivesafter",ninelivesplaying);
+    })
+
+
+
+
+
+    $(".orangeskip").click(function(){
 
         $(".orangeplaying").show();
         $(".noneplaying").hide();
@@ -649,12 +916,17 @@ $(document).ready(function(){
         console.log("ninelivesafter",ninelivesplaying);
     })
 
-    $(".orangeplay").mouseenter(function(){
-        $(".orangeplay").fadeTo(200, 0.5);
+    $(".orangeskip").mouseenter(function(){
+        $(".orangeskip").fadeTo(200, 0.5);
     })
-    $(".orangeplay").mouseleave(function(){
-        $(".orangeplay").fadeTo(200, 1);
+    $(".orangeskip").mouseleave(function(){
+        $(".orangeskip").fadeTo(200, 1);
     })
+
+
+
+
+
 
 
 
@@ -665,7 +937,72 @@ $(document).ready(function(){
     var electricloveplaying=false;
    
     $(".yellowplay").click(function(){
+        $(".yellowplay").hide();
+        $(".yellowskip").show();
 
+        $(".yellowplaying").show();
+        $(".noneplaying").hide();
+        var yellowsong = Math.random();
+
+        console.log("brightbefore",brightplaying);
+        console.log("shakeitoffbefore",shakeitoffplaying);
+        console.log("electriclovebefore",electricloveplaying);
+            if (yellowsong > 0.666){
+                // BRIGHT
+                brightaudio.currentTime = 0;
+                shakeitoffaudio.pause();
+                electricloveaudio.pause();
+                brightaudio.play();
+                
+                $(".shakeitoff").hide();
+                $(".electriclove").hide();
+                $(".bright").show();
+                brightplaying = true;
+                shakeitoffplaying = false;
+                electricloveplaying = false;
+                console.log(7);
+                
+                
+            } else if (yellowsong >0.333){
+                // SHAKE IT OFF
+                shakeitoffaudio.currentTime = 0;
+                brightaudio.pause();
+                electricloveaudio.pause();
+                shakeitoffaudio.play();
+                
+                $(".electriclove").hide();
+                $(".bright").hide();
+                $(".shakeitoff").show();
+                brightplaying = false;
+                shakeitoffplaying = true;
+                electricloveplaying = false;
+                console.log(8);
+                
+            } else {
+                // ELECTRIC LOVE
+                electricloveaudio.currentTime = 0;
+                brightaudio.pause();
+                shakeitoffaudio.pause();
+                electricloveaudio.play();
+                
+                $(".bright").hide();
+                $(".shakeitoff").hide();
+                $(".electriclove").show();
+                brightplaying = false;
+                shakeitoffplaying = false;
+                electricloveplaying = true;
+                console.log(9);
+                
+            }
+        
+        
+        console.log("brightafter",brightplaying);
+        console.log("shakeitoffafter",shakeitoffplaying);
+        console.log("electricloveafter",electricloveplaying);
+    })
+
+
+    $(".yellowskip").click(function(){
         $(".yellowplaying").show();
         $(".noneplaying").hide();
         var yellowsong = Math.random();
@@ -814,12 +1151,15 @@ $(document).ready(function(){
         console.log("electricloveafter",electricloveplaying);
     })
 
-    $(".yellowplay").mouseenter(function(){
-        $(".yellowplay").fadeTo(200, 0.5);
+    $(".yellowskip").mouseenter(function(){
+        $(".yellowskip").fadeTo(200, 0.5);
     })
-    $(".yellowplay").mouseleave(function(){
-        $(".yellowplay").fadeTo(200, 1);
+    $(".yellowskip").mouseleave(function(){
+        $(".yellowskip").fadeTo(200, 1);
     })
+
+
+
 
 
 
@@ -830,7 +1170,74 @@ $(document).ready(function(){
     var saysoplaying=false;
    
     $(".greenplay").click(function(){
+        $(".greenplay").hide();
+        $(".greenskip").show();
 
+        $(".greenplaying").show();
+        $(".noneplaying").hide();
+        var greensong = Math.random();
+
+        console.log("openyourmindbefore",openyourmindplaying);
+        console.log("lostinjapanbefore",lostinjapanplaying);
+        console.log("saysobefore",saysoplaying);
+            if (greensong > 0.666){
+                // OPEN YOUR MIND
+                openyourmindaudio.currentTime = 0;
+                lostinjapanaudio.pause();
+                saysoaudio.pause();
+                openyourmindaudio.play();
+                
+                $(".lostinjapan").hide();
+                $(".sayso").hide();
+                $(".openyourmind").show();
+                openyourmindplaying = true;
+                lostinjapanplaying = false;
+                saysoplaying = false;
+                console.log(7);
+                
+                
+            } else if (greensong >0.333){
+                // LOST IN JAPAN
+                lostinjapanaudio.currentTime = 0;
+                openyourmindaudio.pause();
+                saysoaudio.pause();
+                lostinjapanaudio.play();
+                
+                $(".sayso").hide();
+                $(".openyourmind").hide();
+                $(".lostinjapan").show();
+                openyourmindplaying = false;
+                lostinjapanplaying = true;
+                saysoplaying = false;
+                console.log(8);
+                
+            } else {
+                // SAY SO
+                saysoaudio.currentTime = 0;
+                openyourmindaudio.pause();
+                lostinjapanaudio.pause();
+                saysoaudio.play();
+                
+                $(".openyourmind").hide();
+                $(".lostinjapan").hide();
+                $(".sayso").show();
+                openyourmindplaying = false;
+                lostinjapanplaying = false;
+                saysoplaying = true;
+                console.log(9);
+                
+            }
+        
+        console.log("openyourmindafter",openyourmindplaying);
+        console.log("lostinjapanafter",lostinjapanplaying);
+        console.log("saysoafter",saysoplaying);
+    })
+
+
+
+
+
+    $(".greenskip").click(function(){
         $(".greenplaying").show();
         $(".noneplaying").hide();
         var greensong = Math.random();
@@ -979,12 +1386,13 @@ $(document).ready(function(){
         console.log("saysoafter",saysoplaying);
     })
 
-    $(".greenplay").mouseenter(function(){
-        $(".greenplay").fadeTo(200, 0.5);
+    $(".greenskip").mouseenter(function(){
+        $(".greenskip").fadeTo(200, 0.5);
     })
-    $(".greenplay").mouseleave(function(){
-        $(".greenplay").fadeTo(200, 1);
+    $(".greenskip").mouseleave(function(){
+        $(".greenskip").fadeTo(200, 1);
     })
+
 
 
 
@@ -994,7 +1402,75 @@ $(document).ready(function(){
     var maydayplaying=false;
    
     $(".blueplay").click(function(){
+        $(".blueplay").hide();
+        $(".blueskip").show();
 
+        $(".blueplaying").show();
+        $(".noneplaying").hide();
+        var bluesong = Math.random();
+
+        console.log("bitchesbrokenheartsbefore",bitchesbrokenheartsplaying);
+        console.log("bestpartbefore",bestpartplaying);
+        console.log("maydaybefore",maydayplaying);
+            if (bluesong > 0.666){
+                // BITCHES BROKEN HEARTS
+                bitchesbrokenheartsaudio.currentTime = 0;
+                bestpartaudio.pause();
+                maydayaudio.pause();
+                bitchesbrokenheartsaudio.play();
+                
+                $(".bestpart").hide();
+                $(".mayday").hide();
+                $(".bitchesbrokenhearts").show();
+                bitchesbrokenheartsplaying = true;
+                bestpartplaying = false;
+                maydayplaying = false;
+                console.log(7);
+                
+                
+            } else if (bluesong >0.333){
+                // BEST PART
+                bestpartaudio.currentTime = 0;
+                bitchesbrokenheartsaudio.pause();
+                maydayaudio.pause();
+                bestpartaudio.play();
+                
+                $(".mayday").hide();
+                $(".bitchesbrokenhearts").hide();
+                $(".bestpart").show();
+                bitchesbrokenheartsplaying = false;
+                bestpartplaying = true;
+                maydayplaying = false;
+                console.log(8);
+                
+            } else {
+                // MAYDAY
+                maydayaudio.currentTime = 0;
+                bitchesbrokenheartsaudio.pause();
+                bestpartaudio.pause();
+                maydayaudio.play();
+                
+                $(".bitchesbrokenhearts").hide();
+                $(".bestpart").hide();
+                $(".mayday").show();
+                bitchesbrokenheartsplaying = false;
+                bestpartplaying = false;
+                maydayplaying = true;
+                console.log(9);
+                
+            }
+        
+        console.log("bitchesbrokenheartsafter",bitchesbrokenheartsplaying);
+        console.log("bestpartafter",bestpartplaying);
+        console.log("maydayafter",maydayplaying);
+    })
+
+
+
+
+
+
+    $(".blueskip").click(function(){
         $(".blueplaying").show();
         $(".noneplaying").hide();
         var bluesong = Math.random();
@@ -1143,12 +1619,15 @@ $(document).ready(function(){
         console.log("maydayafter",maydayplaying);
     })
 
-    $(".blueplay").mouseenter(function(){
-        $(".blueplay").fadeTo(200, 0.5);
+    $(".blueskip").mouseenter(function(){
+        $(".blueskip").fadeTo(200, 0.5);
     })
-    $(".blueplay").mouseleave(function(){
-        $(".blueplay").fadeTo(200, 1);
+    $(".blueskip").mouseleave(function(){
+        $(".blueskip").fadeTo(200, 1);
     })
+
+
+
 
 
 
@@ -1160,6 +1639,8 @@ $(document).ready(function(){
      var unravelplaying=false;
     
      $(".purpleplay").click(function(){
+         $(".purpleplay").hide();
+         $(".purpleskip").show();
  
          $(".purpleplaying").show();
          $(".noneplaying").hide();
@@ -1168,93 +1649,6 @@ $(document).ready(function(){
          console.log("undertalebefore",undertaleplaying);
          console.log("royalsbefore",royalsplaying);
          console.log("unravelbefore",unravelplaying);
- 
- 
-         if (undertaleplaying==true && purplesong>0.5){
-                 // ROYALS
-                 royalsaudio.currentTime = 0;
-                 undertaleaudio.pause();
-                 unravelaudio.pause();
-                 royalsaudio.play();
-                 
-                 $(".unravel").hide();
-                 $(".undertale").hide();
-                 $(".royals").show();
-                 undertaleplaying = false;
-                 royalsplaying = true;
-                 unravelplaying = false;
-                 console.log(1);
-         } else if (undertaleplaying==true && purplesong<=0.5){
-                 // UNRAVEL
-                 unravelaudio.currentTime = 0;
-                 undertaleaudio.pause();
-                 royalsaudio.pause();
-                 unravelaudio.play();
-                 
-                 $(".undertale").hide();
-                 $(".royals").hide();
-                 $(".unravel").show();
-                 undertaleplaying = false;
-                 royalsplaying = false;
-                 unravelplaying = true;
-                 console.log(2);        
-         } else if (royalsplaying == true && purplesong > 0.5){
-                 // IT'S RAINING SOMEWHERE ELSE
-                 undertaleaudio.currentTime = 0;
-                 royalsaudio.pause();
-                 unravelaudio.pause();
-                 undertaleaudio.play();
-                 
-                 $(".royals").hide();
-                 $(".unravel").hide();
-                 $(".undertale").show();
-                 undertaleplaying = true;
-                 royalsplaying = false;
-                 unravelplaying = false;
-                 console.log(3);
-         } else if (royalsplaying == true && purplesong <=0.5){
-                 // UNRAVEL
-                 unravelaudio.currentTime = 0;
-                 undertaleaudio.pause();
-                 royalsaudio.pause();
-                 unravelaudio.play();
-                 
-                 $(".undertale").hide();
-                 $(".royals").hide();
-                 $(".unravel").show();
-                 undertaleplaying = false;
-                 royalsplaying = false;
-                 unravelplaying = true;
-                 console.log(4);
-         } else if (unravelplaying == true && purplesong>0.5){
-                 // IT'S RAINING SOMEWHERE ELSE
-                 undertaleaudio.currentTime = 0;
-                 royalsaudio.pause();
-                 unravelaudio.pause();
-                 undertaleaudio.play();
-                 
-                 $(".royals").hide();
-                 $(".unravel").hide();
-                 $(".undertale").show();
-                 undertaleplaying = true;
-                 royalsplaying = false;
-                 unravelplaying = false;
-                 console.log(5);
-         } else if (unravelplaying == true && purplesong<=0.5){
-                 // ROYALS
-                 royalsaudio.currentTime = 0;
-                 undertaleaudio.pause();
-                 unravelaudio.pause();
-                 royalsaudio.play();
-                 
-                 $(".unravel").hide();
-                 $(".undertale").hide();
-                 $(".royals").show();
-                 undertaleplaying = false;
-                 royalsplaying = true;
-                 unravelplaying = false;
-                 console.log(6);
-         } else{
              if (purplesong > 0.666){
                  // IT'S RAINING SOMEWHERE ELSE
                  undertaleaudio.currentTime = 0;
@@ -1303,18 +1697,172 @@ $(document).ready(function(){
                  
              }
          
-         }
          console.log("undertaleafter",undertaleplaying);
          console.log("royalsafter",royalsplaying);
          console.log("unravelafter",unravelplaying);
      })
 
-     $(".purpleplay").mouseenter(function(){
-        $(".purpleplay").fadeTo(200, 0.5);
+
+
+
+
+    $(".purpleskip").click(function(){
+        $(".purpleplaying").show();
+        $(".noneplaying").hide();
+        var purplesong = Math.random();
+
+        console.log("undertalebefore",undertaleplaying);
+        console.log("royalsbefore",royalsplaying);
+        console.log("unravelbefore",unravelplaying);
+
+
+        if (undertaleplaying==true && purplesong>0.5){
+                // ROYALS
+                royalsaudio.currentTime = 0;
+                undertaleaudio.pause();
+                unravelaudio.pause();
+                royalsaudio.play();
+                
+                $(".unravel").hide();
+                $(".undertale").hide();
+                $(".royals").show();
+                undertaleplaying = false;
+                royalsplaying = true;
+                unravelplaying = false;
+                console.log(1);
+        } else if (undertaleplaying==true && purplesong<=0.5){
+                // UNRAVEL
+                unravelaudio.currentTime = 0;
+                undertaleaudio.pause();
+                royalsaudio.pause();
+                unravelaudio.play();
+                
+                $(".undertale").hide();
+                $(".royals").hide();
+                $(".unravel").show();
+                undertaleplaying = false;
+                royalsplaying = false;
+                unravelplaying = true;
+                console.log(2);        
+        } else if (royalsplaying == true && purplesong > 0.5){
+                // IT'S RAINING SOMEWHERE ELSE
+                undertaleaudio.currentTime = 0;
+                royalsaudio.pause();
+                unravelaudio.pause();
+                undertaleaudio.play();
+                
+                $(".royals").hide();
+                $(".unravel").hide();
+                $(".undertale").show();
+                undertaleplaying = true;
+                royalsplaying = false;
+                unravelplaying = false;
+                console.log(3);
+        } else if (royalsplaying == true && purplesong <=0.5){
+                // UNRAVEL
+                unravelaudio.currentTime = 0;
+                undertaleaudio.pause();
+                royalsaudio.pause();
+                unravelaudio.play();
+                
+                $(".undertale").hide();
+                $(".royals").hide();
+                $(".unravel").show();
+                undertaleplaying = false;
+                royalsplaying = false;
+                unravelplaying = true;
+                console.log(4);
+        } else if (unravelplaying == true && purplesong>0.5){
+                // IT'S RAINING SOMEWHERE ELSE
+                undertaleaudio.currentTime = 0;
+                royalsaudio.pause();
+                unravelaudio.pause();
+                undertaleaudio.play();
+                
+                $(".royals").hide();
+                $(".unravel").hide();
+                $(".undertale").show();
+                undertaleplaying = true;
+                royalsplaying = false;
+                unravelplaying = false;
+                console.log(5);
+        } else if (unravelplaying == true && purplesong<=0.5){
+                // ROYALS
+                royalsaudio.currentTime = 0;
+                undertaleaudio.pause();
+                unravelaudio.pause();
+                royalsaudio.play();
+                
+                $(".unravel").hide();
+                $(".undertale").hide();
+                $(".royals").show();
+                undertaleplaying = false;
+                royalsplaying = true;
+                unravelplaying = false;
+                console.log(6);
+        } else{
+            if (purplesong > 0.666){
+                // IT'S RAINING SOMEWHERE ELSE
+                undertaleaudio.currentTime = 0;
+                royalsaudio.pause();
+                unravelaudio.pause();
+                undertaleaudio.play();
+                
+                $(".royals").hide();
+                $(".unravel").hide();
+                $(".undertale").show();
+                undertaleplaying = true;
+                royalsplaying = false;
+                unravelplaying = false;
+                console.log(7);
+                
+                
+            } else if (purplesong >0.333){
+                // ROYALS
+                royalsaudio.currentTime = 0;
+                undertaleaudio.pause();
+                unravelaudio.pause();
+                royalsaudio.play();
+                
+                $(".unravel").hide();
+                $(".undertale").hide();
+                $(".royals").show();
+                undertaleplaying = false;
+                royalsplaying = true;
+                unravelplaying = false;
+                console.log(8);
+                
+            } else {
+                // UNRAVEL
+                unravelaudio.currentTime = 0;
+                undertaleaudio.pause();
+                royalsaudio.pause();
+                unravelaudio.play();
+                
+                $(".undertale").hide();
+                $(".royals").hide();
+                $(".unravel").show();
+                undertaleplaying = false;
+                royalsplaying = false;
+                unravelplaying = true;
+                console.log(9);
+                
+            }
+        
+        }
+        console.log("undertaleafter",undertaleplaying);
+        console.log("royalsafter",royalsplaying);
+        console.log("unravelafter",unravelplaying);
     })
-    $(".purpleplay").mouseleave(function(){
-        $(".purpleplay").fadeTo(200, 1);
-    })
+
+    $(".purpleskip").mouseenter(function(){
+       $(".purpleskip").fadeTo(200, 0.5);
+   })
+   $(".purpleskip").mouseleave(function(){
+       $(".purpleskip").fadeTo(200, 1);
+   })
+
+
 
 
 
@@ -1322,6 +1870,19 @@ $(document).ready(function(){
     $("#randomcolorbutton").click(function(){
         allmute();
         hidecolorplaying();
+        $(".redskip").hide();
+        $(".orangeskip").hide();
+        $(".yellowskip").hide();
+        $(".greenskip").hide();
+        $(".blueskip").hide();
+        $(".purpleskip").hide();
+
+        $(".redplay").show();
+        $(".orangeplay").show();
+        $(".yellowplay").show();
+        $(".greenplay").show();
+        $(".blueplay").show();
+        $(".purpleplay").show();
         var pagenumber = Math.random();
         if (pagenumber > 0.835){
             redpage();
